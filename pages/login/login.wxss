@@ -1,0 +1,18 @@
+/* pages/login/login.wxss */
+.con{
+  padding:0 30rpx;
+}
+.title{background-color:#0dc441;text-align: center;height:88rpx;line-height:88rpx}
+.inp{
+  border-bottom:1px solid #7f7f7f;
+}
+.vinp{margin-top:20rpx;}
+.log{
+ height:88rpx;
+ background-color:#0dc441;
+ margin-top:20rpx
+}
+.register{
+  font-size:30rpx;margin-top:20rpx
+}
+.register span{color:#0dc441;text-decoration:underline}
