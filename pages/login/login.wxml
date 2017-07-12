@@ -3,13 +3,11 @@
 <view class="con">
   
   <view class="vinp">
-  手机号
-    <input  type="number" class="inp"/>
+    <input  type="number" class="inp" placeholder="手机号"/>
   </view>
   
   <view class="vinp">
-  密码
-    <input type="password" class="inp" />
+    <input type="password" class="inp"  placeholder="密码" />
   </view>
   <view class="register">还没有账号？点击此处立即<span>注册</span></view>
   <button bindtap="login" class="log">提交</button>

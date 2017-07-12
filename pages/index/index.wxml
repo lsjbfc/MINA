@@ -4,45 +4,22 @@
 </view>
 <view class="container">
    <view class="nav" bindtap="change" > 
-   <!-- <span wx:for:''></span> -->
-      <span class="{{cur=='足球现场'?'udlin':''}}" data-value="足球现场">足球现场</span>
-      <span class="{{cur=='足球生活'?'udlin':''}}" data-value="足球生活">足球生活</span>
-      <span class="{{cur=='足球美女'?'udlin':''}}" data-value="足球美女">足球美女</span>
+      <span wx:for='{{title}}' class='{{cur==item.curinx?"udlin":"aa"}}' bindTap="change" data-currtab="{{item.curinx}}" wx:key="{{item.curinx}}">{{item.name}}</span> 
    </view>
-   <view class="meng">
-      <view>
-        <image src="/imgs/xwz.jpg"></image>
-        <span>小丸子</span>
-      </view>   
-       <view>
-        <image src="/imgs/xwz.jpg"></image>
-        <span>小丸子</span>
-      </view>   
-       <view>
-        <image src="/imgs/xwz.jpg"></image>
-        <span>小丸子</span>
-      </view>   
-       <view>
-        <image src="/imgs/xwz.jpg"></image>
-        <span>小丸子</span>
-      </view> 
-       <view>
-        <image src="/imgs/xwz.jpg"></image>
-        <span>小丸子</span>
-      </view>   
-       <view>
-        <image src="/imgs/xwz.jpg"></image>
-        <span>小丸子</span>
-      </view>   
-       <view>
-        <image src="/imgs/xwz.jpg"></image>
-        <span>小丸子</span>
-      </view>   
-       <view>
-        <image src="/imgs/xwz.jpg"></image>
-        <span>小丸子</span>
-      </view>       
-   </view>
+   <swiper  duration="800" class="meng" current="{{cur}}" bindchange="go">
+      <swiper-item class="sitem" wx:for="{{adorable}}" wx:for-item="cur" wx:for-item="cur" wx:for-index="index"> 
+
+        <view wx:for="cur">{{item}}</view>
+      {{cur[0]}}
+        <!-- {{item}}{{index}}{{adorable.item1}} -->
+        <!-- <view wx:for="item1">
+          <image src="{{item.url}}"></image>
+          <span>{{item.introduce}}</span>
+        </view> -->
+      </swiper-item>
+        
+
+   </swiper>
 </view>
 <view class="footer">
       <view>

@@ -1,16 +1,20 @@
 .title{background-color:#0dc441;text-align: center;height: 88rpx;line-height: 88rpx;font-size:24rpx;color:#FFF;position:fixed;top:0;width:100%;z-index: 9}
 .left{background:#64d985;padding:14rpx;border-radius:16rpx 0 0 16rpx}
 .right{background-color:#3dd067;padding:14rpx;border-radius:0 16rpx 16rpx 0}
-.container{padding:88rpx 0;position:relative}
-.nav{display:flex;justify-content:space-around;height:70rpx;align-items:center;border-bottom:1rpx solid #CCC;position:fixed;width:100%;background-color:#fcfffc;opacity:.7;}
+.container{height:100%;padding:88rpx 0;position:relative;overflow: hidden}
+.container:after{content:'.';display:inline-block;height:0;clear:both;overflow:hidden;}
+.nav{display:flex;justify-content:space-around;height:70rpx;align-items:center;border-bottom:1rpx solid #CCC;position:fixed;width:100%;background-color:#fcfffc;opacity:.7;z-index: 9}
 .nav span{display:inline-block;height:70rpx;line-height:70rpx;flex:1;text-align: center}
 .udlin{border-bottom:6rpx solid #0dc441;box-sizing:border-box}
-.meng{display:flex;flex-wrap:wrap;justify-content:space-between;margin-top:70rpx}
-.meng view{display:flex;flex-direction:column;width:49%;border:1px solid #CCC;box-sizing:border-box;height:374rpx;margin-top:15rpx}
-.meng image{width:100%;border-bottom:1px solid #CCC}
+swiper{margin-top:70rpx;width:100%;height:100%}
+swiper:after{content:'.';display:block;height:0;clear:both;overflow:hidden;}
+.sitem{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-start}
+.sitem view{width:49%;height:374rpx;border:1px solid #CCC;box-sizing:border-box;margin-top:15rpx}
+.sitem image{width:100%;height:80%;border-bottom:1px solid #CCC}
 .footer{position:fixed;height:88rpx;width:100%;display:flex;bottom:0;background-color: #FFF;align-items:center}
 .footer view{height:100%;width:22%;display:flex;flex-direction:column;align-items:center;justify-content:center;}
 .footer image{width:31rpx;height:31rpx}
 .footer span{display:inline-block;font-size:22rpx;margin-top:10rpx }
 .footer .camera{border-radius:50%;border:1px solid #CCC;width:100rpx;height: 100rpx;justify-content: center;background-color: #FFF;margin-bottom:15rpx}
 .footer .camera image{width:58rpx;height:53rpx}
+page{height:100%}
