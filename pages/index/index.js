@@ -9,13 +9,17 @@ Page({
       { 'name': '足球生活', curinx: 1 },
       {'name': '足球美女', curinx: 2 }
     ],
-    adorable:{
-      item1: [{ 'url':'/imgs/xwz.jpg', 'introduce':"小丸子啊小丸子"}
+   
+      item1: [{ 'url':'/imgs/xwz.jpg', 'introduce':"小丸子啊小丸子"},
+        { 'url': '/imgs/xwz.jpg', 'introduce': "小丸子啊小丸子" },
+        { 'url': '/imgs/xwz.jpg', 'introduce': "小丸子啊小丸子" },
+        { 'url': '/imgs/xwz.jpg', 'introduce': "小丸子啊小丸子" },
+        { 'url': '/imgs/xwz.jpg', 'introduce': "小丸子啊小丸子" }         
       ],
       item2: [],
       item3: []
-    },
-    test:[1,2,4]
+  },onShow(){
+      
   },
   //事件处理函数
   bindViewTap: function() {
@@ -23,7 +27,8 @@ Page({
       url: '../logs/logs'
     })
   },
-  onLoad: function () {
+  onLoad: function (options) {
+    console.log(options)
     console.log('onLoad')
     var that = this
     //调用应用实例的方法获取全局数据
@@ -33,6 +38,12 @@ Page({
         userInfo:userInfo
       })
     })
+    // for(cur in adorable){
+    //   that.setData({
+    //      arr:arr.push(cur)
+    //   })
+    // }
+    // console.log(arr)
   },
   change(e){
       this.setData({

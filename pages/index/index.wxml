@@ -7,17 +7,24 @@
       <span wx:for='{{title}}' class='{{cur==item.curinx?"udlin":"aa"}}' bindTap="change" data-currtab="{{item.curinx}}" wx:key="{{item.curinx}}">{{item.name}}</span> 
    </view>
    <swiper  duration="800" class="meng" current="{{cur}}" bindchange="go">
-      <swiper-item class="sitem" wx:for="{{adorable}}" wx:for-item="cur" wx:for-item="cur" wx:for-index="index"> 
-
-        <view wx:for="cur">{{item}}</view>
-      {{cur[0]}}
-        <!-- {{item}}{{index}}{{adorable.item1}} -->
-        <!-- <view wx:for="item1">
-          <image src="{{item.url}}"></image>
-          <span>{{item.introduce}}</span>
-        </view> -->
+      <swiper-item class="sitem" > 
+          <view class="classname" wx:for="{{item1}}" wx:key="{{item}}">
+            <image src="{{item.url}}"></image>
+            <span>{{item.introduce}}</span>
+          </view>
       </swiper-item>
-        
+      <swiper-item class="sitem" > 
+          <view class="classname" wx:for="{{item1}}" wx:key="{{item}}">
+            <image src="{{item.url}}"></image>
+            <span>{{item.introduce}}</span>
+          </view>
+      </swiper-item>
+      <swiper-item class="sitem" > 
+          <view class="classname" wx:for="{{item1}}" wx:key="{{item}}">
+            <image src="{{item.url}}"></image>
+            <span>{{item.introduce}}</span>
+          </view>
+      </swiper-item>  
 
    </swiper>
 </view>

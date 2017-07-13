@@ -65,7 +65,7 @@ Page({
   },
   login(){
     wx.navigateTo({
-      url: '/pages/index/index'
+      url: '/pages/index/index?user=123'
     })
   }
 })
